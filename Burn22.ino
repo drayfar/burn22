@@ -24,7 +24,7 @@ void loop() {
 // Rainbow-enhanced theater marquee. Pass delay time (in ms) between frames.
 void theaterChaseRainbow(int wait) {
   int firstPixelHue = 0;     // First pixel starts at red (hue 0)
-  for(int a=0; a<30; a++) {  // Repeat 30 times...
+  for(int a=0; a<30; a++) {  // Repeat 30 times... // Wouldnt this be 29 times?
     for(int b=0; b<3; b++) { //  'b' counts from 0 to 2...
       strip0.clear();         //   Set all pixels in RAM to 0 (off)
       strip1.clear();
